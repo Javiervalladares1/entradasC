@@ -1,5 +1,3 @@
-import java.util.Scanner;
-
 public class Comprador {
     private String nombre;
     private String email;
@@ -29,23 +27,8 @@ public class Comprador {
         return presupuestoMaximo;
     }
 
-    public void actualizarDatos() {
-        Scanner scanner = new Scanner(System.in);
-
-        System.out.println("Actualización de datos del comprador:");
-        System.out.print("Ingresa tu nombre: ");
-        nombre = scanner.nextLine();
-
-        System.out.print("Ingresa tu email: ");
-        email = scanner.nextLine();
-
-        System.out.print("Ingresa la cantidad de boletos a comprar: ");
-        cantidadBoletos = scanner.nextInt();
-
-        System.out.print("Ingresa tu presupuesto máximo: ");
-        presupuestoMaximo = scanner.nextDouble();
-
-        System.out.println("Datos actualizados con éxito.");
+    public void restarBoletos(int cantidad) {
+        cantidadBoletos -= cantidad;
     }
 }
 
