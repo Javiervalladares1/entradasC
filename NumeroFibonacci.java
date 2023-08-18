@@ -10,5 +10,4 @@ public class NumeroFibonacci {
         return b == numero;
     }
 }
-
 //promp chat gpt: como hacer una clase en java que de los numeros fibonacci
